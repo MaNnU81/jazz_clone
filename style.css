@@ -1,4 +1,18 @@
-@charset "UTF-8";@font-face{font-family:'Matter Bold';src:url("../fonts/MatterSQ-Bold.eot");src:url("../fonts/MatterSQ-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/MatterSQ-Bold.woff2") format("woff2"), url("../fonts/MatterSQ-Bold.woff") format("woff"), url("../fonts/MatterSQ-Bold.ttf") format("truetype");font-weight:bold;font-style:normal}@font-face{font-family:'Matter';src:url("../fonts/Matter-Light.eot");src:url("../fonts/Matter-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Matter-Light.woff2") format("woff2"), url("../fonts/Matter-Light.woff") format("woff"), url("../fonts/Matter-Light.ttf") format("truetype");font-weight:300;font-style:normal}
+@charset "UTF-8";@font-face {
+    font-family: 'Matter Bold';
+    src: url("../fonts/MatterSQ-Bold.eot");
+    src: url("../fonts/MatterSQ-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/MatterSQ-Bold.woff2") format("woff2"), url("../fonts/MatterSQ-Bold.woff") format("woff"), url("../fonts/MatterSQ-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Matter';
+    src: url("../fonts/Matter-Light.eot");
+    src: url("../fonts/Matter-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Matter-Light.woff2") format("woff2"), url("../fonts/Matter-Light.woff") format("woff"), url("../fonts/Matter-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal
+}
 
 
 * {
@@ -36,7 +50,9 @@ padding:  20px 20px 0 20px;
     object-fit: contain;
 }
 
-
+.listen{
+    font-size: 400px;
+}
 
 
 .container {
@@ -68,7 +84,11 @@ padding:  20px 20px 0 20px;
     background-color: #660099;
    
 }
-
+.contenitorehowto{
+    display: flex;
+    flex-direction: column;
+    }
+    
 .howto{
     background-color: #ffcc00;
 display: flex;
@@ -81,6 +101,8 @@ flex-direction: row;
 flex-grow: 1;
 align-self: stretch;
 flex-basis: 0px;
+font-size: 160px;
+padding: 0px;
 
 }
 
@@ -116,13 +138,13 @@ justify-items: right;
 
 .finale{
     background-color: #ffcc00;
-    /* display: flex;
+    display: flex;
     flex-direction: row;
     align-self: stretch;
-    flex-grow: 3; */
+    flex-grow: 3;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 10vh 80vh ;
+    grid-template-rows: 20vh 80vh ;
     grid-template-areas:
 "terminali terminali"
 "z1 z2";
@@ -130,7 +152,9 @@ justify-items: right;
 
 .listaterminali{
    grid-area: terminali;
-   
+   display: grid;
+   grid-template-columns: 1fr 1fr; 
+   /* border-top: 0.5px rgba(0, 0, 0, 0.5) solid; */
 }
 
 .letteraz1{
@@ -146,8 +170,114 @@ justify-items: left;
    grid-area: z2;
 }
 
-.contenitorehowto{
-display: flex;
-flex-direction: column;
+
+.contenitoresettimana{
+display: grid;
+width: 100vw;
+height: 100vh;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(5, 1fr) ;
+grid-template-areas: 
+". . monday"
+"tuesday wednesday ."
+". thursday ."
+". . friday"
+"saturday sunday .";
+gap: 30px;
 }
 
+#monday{
+grid-area: monday;
+}
+#tuesday{
+grid-area: tuesday;
+}
+#wednesday{
+grid-area: wednesday;
+}
+#thursday{
+    grid-area: thursday;   
+}
+#friday{
+    grid-area: friday;
+}
+#saturday{
+    grid-area: saturday;
+}
+#sunday{
+    grid-area: sunday;
+}
+
+h3{
+    font-size: 40px;
+    font-family: "Matter";
+    
+}
+
+
+.show {
+    border-top: 0.5px rgba(0, 0, 0, 0.5) solid;
+}
+.bdb{
+    border-bottom: 0.5px rgba(0, 0, 0, 0.5) solid;
+}
+
+#monday, #tuesday, #wednesday, #thursday, #friday, #saturday, #sunday {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+   
+}
+
+.ora {
+    text-align: left; 
+    border-top: 0.5px rgba(0, 0, 0, 0.5) solid;
+    padding: 12px;
+}
+
+.show {
+    text-align: left; 
+   padding: 12px;
+}
+.bigbig{
+    font-size: 400px;!important
+}
+
+.stazioni{
+    display: grid;
+    grid-template-columns: 2fr 1fr; 
+    border-top: 0.5px rgba(0, 0, 0, 0.5) solid;
+}
+.nomi{
+   text-align: right; 
+    padding: 12px;
+    border-top: 0.5px rgba(0, 0, 0, 0.5) solid;
+    font-size: xx-large;
+}
+.cancelletto{
+    text-align: right; 
+    border-top: 0.5px rgba(0, 0, 0, 0.5) solid;
+    padding: 12px;
+    font-size: xx-large;
+}
+
+/* .finale{
+    display: grid;
+    grid-template-columns: 2fr 1fr; 
+    border-top: 0.5px rgba(0, 0, 0, 0.5) solid;
+} */
+
+.marche{
+    text-align: left; 
+    padding: 12px;
+    border-top: 0.5px rgba(0, 0, 0, 0.5) solid;
+    font-size: xx-large;
+
+}
+
+.frase{
+   text-align: right;
+    padding: 12px;
+    border-top: 0.5px rgba(0, 0, 0, 0.5) solid;
+    font-size: xx-large;
+
+}
