@@ -66,4 +66,88 @@ padding:  20px 20px 0 20px;
 
 .img1 {
     background-color: #660099;
+   
 }
+
+.howto{
+    background-color: #ffcc00;
+display: flex;
+flex-direction: row;
+ align-self: stretch;
+ flex-grow: 1;
+}
+
+.scritta{
+flex-grow: 1;
+align-self: stretch;
+flex-basis: 0px;
+
+}
+
+.stazioni {
+
+flex-grow: 2;
+align-self: stretch;
+flex-basis: 0px;
+justify-items: right;
+}
+
+.centro{
+    background-color: #ffcc00;
+    display: flex;
+    flex-direction: row-reverse;
+    align-self: stretch;
+    flex-grow: 2;
+}
+
+.online{
+    flex-grow: 2;
+    align-self: stretch;
+    flex-basis: 0px;
+    justify-items: left;
+}
+
+.letteraa{
+    flex-grow: 1;
+    align-self: stretch;
+    flex-basis: 0px;
+
+}
+
+.finale{
+    background-color: #ffcc00;
+    /* display: flex;
+    flex-direction: row;
+    align-self: stretch;
+    flex-grow: 3; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10vh 80vh ;
+    grid-template-areas:
+"terminali terminali"
+"z1 z2";
+}
+
+.listaterminali{
+   grid-area: terminali;
+   
+}
+
+.letteraz1{
+grid-area: z1;
+padding: 0;
+margin: 0;
+justify-items: right;
+}
+.letteraz2{
+padding: 0;
+margin: 0;
+justify-items: left;
+   grid-area: z2;
+}
+
+.contenitorehowto{
+display: flex;
+flex-direction: column;
+}
+
