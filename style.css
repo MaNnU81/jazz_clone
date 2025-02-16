@@ -87,6 +87,7 @@ padding:  20px 20px 0 20px;
 .contenitorehowto{
     display: flex;
     flex-direction: column;
+  
     }
     
 .howto{
@@ -95,6 +96,7 @@ display: flex;
 flex-direction: row;
  align-self: stretch;
  flex-grow: 1;
+
 }
 
 .scritta{
@@ -102,18 +104,38 @@ flex-grow: 1;
 align-self: stretch;
 flex-basis: 0px;
 font-size: 160px;
-padding: 0px;
-
+margin-left: 5px;
+}
+.scrittalogo{
+    
+    margin-left: 5px;
 }
 
 .stazioni {
-
 flex-grow: 2;
-align-self: stretch;
-flex-basis: 0px;
-justify-items: right;
+width: 100vw;
+height: 100vh;
 }
 
+.rigastazioni{
+    display: grid;
+    grid-template-columns: 2fr 1fr; 
+    border-top: 0.5px rgba(0, 0, 0, 0.5) solid;
+}
+
+.staz{
+    text-align: start; 
+    padding: 12px;
+    border-top: 0.5px rgba(0, 0, 0, 0.5) solid;
+    font-size: xx-large;
+}
+
+.linkstazioni{
+    text-align: end; 
+    border-top: 0.5px rgba(0, 0, 0, 0.5) solid;
+    padding: 12px;
+    font-size: xx-large;
+}
 .centro{
     background-color: #ffcc00;
     display: flex;
@@ -128,6 +150,8 @@ justify-items: right;
     flex-basis: 0px;
     justify-items: left;
 }
+
+
 
 .letteraa{
     flex-grow: 1;
@@ -248,13 +272,13 @@ h3{
     border-top: 0.5px rgba(0, 0, 0, 0.5) solid;
 }
 .nomi{
-   text-align: right; 
+   text-align: start; 
     padding: 12px;
     border-top: 0.5px rgba(0, 0, 0, 0.5) solid;
     font-size: xx-large;
 }
 .cancelletto{
-    text-align: right; 
+    text-align: end; 
     border-top: 0.5px rgba(0, 0, 0, 0.5) solid;
     padding: 12px;
     font-size: xx-large;
